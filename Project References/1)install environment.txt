@@ -1,0 +1,9 @@
+# create new venv with Windows Python (you currently have 3.11 installed)
+py -3.11 -m venv .venv
+
+# install needed tools
+& ".\.venv\Scripts\python.exe" -m pip install --upgrade pip setuptools wheel
+& ".\.venv\Scripts\python.exe" -m pip install ipykernel jupyter pandas numpy scikit-learn matplotlib seaborn
+
+# register kernel
+& ".\.venv\Scripts\python.exe" -m ipykernel install --user --name telecom-churn --display-name "Telecom Churn (.venv)"

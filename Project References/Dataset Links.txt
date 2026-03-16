@@ -1,0 +1,28 @@
+Layoffs - layoffs.fyi
+Occupational Employment and Wage Statistics - 
+Job postings - hiring demand dataset - https://fred.stlouisfed.org/series/IHLIDXUSTPSOFTDEVE
+                                        https://fred.stlouisfed.org/series/IHLIDXUS
+
+
+Official labor turnover dataset - BLS JOLTS - https://www.bls.gov/data/#employment
+
+Employed persons by detailed occupation and age BLS - https://www.bls.gov/cps/tables.htm#otheryears
+            For preprocessing, EDA, charts, and merging with other datasets
+
+            Use:
+            it_occupations_master_long.csv
+
+            For finding which roles were most affected from 2020–2025
+
+            Use:
+            it_occupations_wide_total.csv
+
+            For age-based analysis
+
+            Use:
+            it_occupations_wide_all_metrics.csv
+
+            For manual viewing and sharing
+
+            Use:
+            it_occupations_merged.xlsx
