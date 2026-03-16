@@ -6,16 +6,16 @@
 |---|---|
 | Raw data (5 sources) | Complete |
 | Integration pipelines | Complete |
-| Main analysis notebook | Not started (only 2 import lines) |
-| Modeling / predictions | Not started |
+| Main analysis notebook | **Complete (Phase 2 EDA done)** |
+| Modeling / predictions | **Complete (Phase 3 done)** |
 
 ---
 
 ## Phase 1 — Environment Setup
 
-- [ ] Create the Python 3.11 venv: `py -3.11 -m venv .venv`
-- [ ] Install required packages: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `jupyter`, `ipykernel`
-- [ ] Register the Jupyter kernel (optionally rename from `us-it-role-downfall` to a project-specific name)
+- [x] Create the Python 3.11 venv: `py -3.11 -m venv .venv`
+- [x] Install required packages: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `jupyter`, `ipykernel`
+- [x] Register the Jupyter kernel (optionally rename from `us-it-role-downfall` to a project-specific name)
 
 ---
 
@@ -35,31 +35,31 @@
 
 ### Step 2 — Role-level impact analysis
 
-- [ ] Use `it_occupations_wide_total.csv` to rank the 16 tracked roles by employment change 2020–2025
-- [ ] Identify biggest losers (web developers, network admins, programmers) and gainers (security analysts)
+- [x] Use `it_occupations_wide_total.csv` to rank the 16 tracked roles by employment change 2020–2025
+- [x] Identify biggest losers (web developers, network admins, programmers) and gainers (security analysts)
 
 ### Step 3 — Time-series trends
 
-- [ ] Plot IT employment over time (2001–2024) using `IT_yearly_summary.csv`
-- [ ] Overlay layoff events from `Layoffs_USA.csv` on the timeline
-- [ ] Plot job posting demand indices (Indeed FRED data) over time
+- [x] Plot IT employment over time (2001–2024) using `IT_yearly_summary.csv`
+- [x] Overlay layoff events from `Layoffs_USA.csv` on the timeline
+- [x] Plot job posting demand indices (Indeed FRED data) over time
 
 ### Step 4 — Labor market turnover context
 
-- [ ] Use `combined_job_data.csv` (JOLTS) to show how hires, openings, and layoff rates evolved (Dec 2000–2025)
-- [ ] Correlate JOLTS layoff spikes with layoffs.fyi events
+- [x] Use `combined_job_data.csv` (JOLTS) to show how hires, openings, and layoff rates evolved (Dec 2000–2025)
+- [x] Correlate JOLTS layoff spikes with layoffs.fyi events
 
 ### Step 5 — Age-based analysis
 
-- [ ] Use `it_occupations_wide_all_metrics.csv` to compare age group distributions per role
-- [ ] Identify if certain age groups were disproportionately affected by role declines
+- [x] Use `it_occupations_wide_all_metrics.csv` to compare age group distributions per role
+- [x] Identify if certain age groups were disproportionately affected by role declines
 
 ---
 
 ## Phase 3 — Predictive Modeling
 
-- [ ] Build a trend/regression model on role-level employment data to project which roles will decline further
-- [ ] Candidate approaches: linear regression per role, time-series extrapolation, or a simple forecasting model on `IT_yearly_summary.csv`
+- [x] Build a trend/regression model on role-level employment data to project which roles will decline further
+- [x] Candidate approaches: linear regression per role, time-series extrapolation, or a simple forecasting model on `IT_yearly_summary.csv`
 
 ---
 
